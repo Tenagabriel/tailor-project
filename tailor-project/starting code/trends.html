@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display</title>
+  <link rel="stylesheet" href="styles/main-header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/trend.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <header>
+     <div class="closet-header">
+      <div class="closet-left-section">
+        <h1 class="brand-name">My-Closet</h1>
+        <p class="closet-motto">Finding you the perfect outfit for any occasion!</p>
+      </div>
+      <div class="closet-middle-section">
+        <input class="search-bar js-search-bar" placeholder="Search your occasion" type="text" aria-label="Search for an occasion or outfit">
+        <button class="search-button js-search-button">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </button>
+      </div>
+      <div class="closet-right-section">
+          <a class="trend-link" href="index.html">
+           <button class="trend-button js-trend-button"> ← back to home</button>
+        </a>
+        <button class="menu-btn">
+           <img class="menu-img" src="images/icons/hamburger-menu.png" alt="">
+        </button>  
+      </div>
+     </div>
+       <div class="side-bar">
+      <ul>
+        <li>
+         <button class="side-bar-button side-bar-home">Home</button>
+        </li>
+        <li>
+          <button class="side-bar-button side-bar-trend">Top trends</button>
+        </li>
+        <li>
+          <button class="side-bar-button side-bar-explore">Explore</button>
+          <ul class="explore-menu">
+            <li><a href="filtered.html?Type=gown">Gowns</a></li>
+            <li><a href="filtered.html?Type=suit">Suits</a></li>
+            <li><a href="filtered.html?Type=Native">Native</a></li>
+            <li><a href="filtered.html?Type=jean">Jeans</a></li>
+            <li><a href="filtered.html?Type=polo">Polo</a></li>
+          </ul>
+        </li>
+        <li>
+         <button class="side-bar-button side-bar-about-us">About us</button>
+        </li>
+        <li>
+          <button class="side-bar-button side-bar-contact">contact us</button>
+          <ul class="contact-menu">
+            <li>
+              <a href="https://x.com/Gabi_4Real" target="_blank">
+                <img class="contact-image" src="images/icons/twitter icon.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="https://mailto:tenagabriel13@gmail.com" target="_blank">
+                <img class="contact-image" src="images/icons/gmail icon.webp" alt="">
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+     </div>
+   </header>
+      <div class="about-popup">
+  <div class="popup-content">
+    <p>My-Closet is your go-to platform that helps you find the perfect oufit for any occasion, from casual to formal, with style and ease!</p>
+    <button class="popup-close">Close</button>
+  </div>
+</div>
+   <main>
+    <div class="illustration-grid">
+      <div class="illustration-container">
+        <img class="trend-images" src="images/illustration-images/church-native-attire-men.jpg" alt="">
+        </div>
+        <div class="illustration-container">
+          <img class="trend-images" src="images/illustration-images/conference-gown-women.webp" alt="">
+        </div>
+         <div class="illustration-container">
+            <img class="trend-images" src="images/illustration-images/ebony-casual-suit.jpg" alt="">
+         </div>
+         <div class="illustration-container">
+              <img class="trend-images" src="images/illustration-images/fancy-date-night-gown.jpg" alt="">
+         </div>
+         <div class="illustration-container">
+            <img class="trend-images" src="images/illustration-images/fitted-blue-gown.jpg" alt="">
+         </div>
+          <div class="illustration-container">
+            <img class="trend-images" src="images/illustration-images/grooms-men.jpg" alt="">
+          </div>
+          <div class="illustration-container"></div>
+          <div class="illustration-container">
+              <img class="trend-images" src="images/illustration-images/in-law-visit-gown.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+            <img class="trend-images" src="images/illustration-images/loverboy-dinner-suit-men.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+            <img class="trend-images" src="images/illustration-images/men-suit.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+               <img class="trend-images" src="images/illustration-images/music-concert-oufit.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+             <img class="trend-images" src="images/illustration-images/native-attire.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+                <img class="trend-images" src="images/illustration-images/native-attire.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+            <img class="trend-images" src="images/illustration-images/office-gown-women.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+              <img class="trend-images" src="images/illustration-images/owambe-native-men.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+            <img class="trend-images" src="images/illustration-images/presidential-visit-men.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+             <img class="trend-images" src="images/illustration-images/strong-black-suit.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+              <img class="trend-images" src="images/illustration-images/university-class-outfit-women.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+             <img class="trend-images" src="images/illustration-images/walk-oufit.jpg" alt="">
+          </div>
+          <div class="illustration-container">
+             <img class="trend-images" src="images/illustration-images/office-appointment-oufit.jpg" alt="">
+          </div>
+    </div>
+   </main>
+    <footer>
+    <p>© 2025 My-Closet. All rights reserved.</p>
+   </footer>
+   <script type="module" src="scripts/trends.js"></script>
+</body>
+</html>

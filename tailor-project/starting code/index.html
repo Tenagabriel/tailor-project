@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My-Tailor</title>
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main-header.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/user.css">
+  <link rel="stylesheet" href="styles/nav.css">
+
+  </head>
+  <body>
+   <header>
+
+    
+     <div className="side-bar">
+      <ul>
+        <li>
+         <button className="side-bar-button side-bar-home">
+          <p>Home</p>
+          <img className="side-bar-img" src="images/illustration-images/side-bar-eight-removebg-preview.png" alt="">
+        </button>
+        </li>
+           <li>
+          <button className="side-bar-button side-bar-explore">
+            <p>Explore</p>
+            <img className="side-bar-img" src="images/illustration-images/side-bar-one-removebg-preview.png" alt="">
+          </button>
+          <ul className="explore-menu">
+            <li><a href="filtered.html?Type=gown">Gowns</a></li>
+            <li><a href="filtered.html?Type=suit">Suits</a></li>
+            <li><a href="filtered.html?Type=Native">Native</a></li>
+            <li><a href="filtered.html?Type=jean">Jeans</a></li>
+            <li><a href="filtered.html?Type=polo">Polo</a></li>
+          </ul>
+        </li>
+        <li>
+          <button className="side-bar-button side-bar-trend">
+            <p>Trending</p>
+             <img className="side-bar-img"  src="images/illustration-images/side-bar-three-removebg-preview.png" alt="">
+          </button>
+        </li>
+        <li>
+        <button className="side-bar-button side-bar-womens">
+          <p>Womens</p>
+          <img className="side-bar-img" src="images/illustration-images/side-bar-woman-one-removebg-preview.png" alt="">
+        </button>
+      </li>
+        <li>
+        <button className="side-bar-button side-bar-mens">
+          <p>Mens</p>
+          <img className="side-bar-img" src="images/illustration-images/side-bar-five-removebg-preview.png" alt="">
+        </button>
+      </li>
+          <li>
+         <button className="side-bar-button side-bar-Discover">
+          <p>Discover</p>
+          <img className="side-bar-img" src="images/illustration-images/side-bar-six-removebg-preview.png" alt="">
+         </button>
+        </li>
+        <li>
+         <button className="side-bar-button 
+         side-bar-about-us">
+         <p>Brands</p>
+        <img className="side-bar-img" src="images/illustration-images/side-bar-seven-removebg-preview.png" alt="">
+        </button>
+        </li>
+          <li>
+         <button className="side-bar-button side-bar-about-us">
+          <p>About us</p>
+          <img className="side-bar-img" src="images/illustration-images/side-bar-nine-removebg-preview.png" alt="">
+        </button>
+        </li>
+        <li>
+          <button className="side-bar-button side-bar-contact">
+            <p>contact us</p>
+            <img className="side-bar-img" src="images/illustration-images/side-bar-two-removebg-preview.png" alt="">
+          </button>
+          <ul className="contact-menu">
+            <li>
+              <a href="https://x.com/Gabi_4Real" target="_blank">
+                <img className="contact-image" src="images/icons/twitter icon.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="https://mailto:tenagabriel13@gmail.com" target="_blank">
+                <img className="contact-image" src="images/icons/gmail icon.webp" alt="">
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+     </div>
+   </header>
+   <div className="signup-popup">
+     <div className="main-sign-in-box">
+      <button className="sign-in-op">Sign in</button>
+     </div>
+     <div className="sign-up-box">
+      <a className="sign-up-prompt" href="">
+        <div className="icon-container">  
+          <img className="user-icon" src="images/icons/people.png" alt="">
+        </div>
+        <p className="sign-up-text">Sign up</p>
+      </a>
+     </div>
+     <div>
+        <a className="sign-up-prompt" href="">
+        <div className="icon-container">  
+          <img className="user-icon" src="images/icons/heart-icon.png" alt="">
+        </div>
+          <p className="sign-up-text">My likes</p>
+      </a>
+     </div>
+     <div>
+       <a className="sign-up-prompt" href="">
+        <div className="icon-container">  
+          <img className="faq-icon" src="images/icons/faq icon.png" alt="">
+        </div>
+          <p className="sign-up-text">FAQ</p>
+      </a>
+     </div>
+   </div>
+     <div className="reg-fx">
+       <div className="signup-reg-popup">
+        <img className="cancel-btn" src="images/icons/close-button.png" alt="">
+        <h1>Create an account</h1>
+        <div className="reg-main-bx">
+          <input className="reg-bx" placeholder="First Name" type="text">
+          <input className="reg-bx" placeholder="Last Name" type="text">
+          <input className="reg-bx" placeholder="Email Address" type="text">
+          <input className="reg-bx" placeholder="Confirm Email Address" type="text">
+          <input className="reg-bx" placeholder="Password" type="text">
+          <input className="reg-bx" placeholder="Confirm Password" type="text">
+          <input className="reg-box reg-nxt" placeholder="NEXT" type="text">
+        </div>
+          <div className="reg-action">
+            <p>Already have an account?<span><a href="">sign in</a></span></p>
+          </div>
+       </div>
+     </div>
+   <div className="explore-popup">
+     <div className="womens-box">
+      <h4>Womens wears</h4>
+      <ul>
+        <li>
+          <a className="explore-links" href="">Gowns</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Ankara</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Jeans</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Palazzo</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Suits</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Skirts and blouses</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Swim trunks</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Gym outfits</a>
+        </li>
+      </ul>
+     </div>
+     <div className="mens-box">
+      <h4>Mens wears</h4>
+      <ul>
+        <li>
+          <a className="explore-links" href="">Natives</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Tailored</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Jeans and polo</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Hoodies and sweatshirts</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Gym oufits</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Joggers</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Suits</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Jackets</a>
+        </li>
+      </ul>
+     </div>
+     <div className="brand-box">
+      <h4>Brands</h4>
+      <ul>
+        <li>
+          <a className="explore-links" href="">Castitch Fashion House</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Easy Fits Clothing</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Naires Fashion Concept</a>
+        </li>
+        <li>
+          <a className="explore-links" href="">Sisi Satoria</a>
+        </li>
+      </ul>
+     </div>
+   </div>
+   <div className="about-popup">
+  <div className="popup-content">
+    <p>My-Closet is your go-to platform that helps you find the perfect oufit for any occasion, from casual to formal, with style and ease!</p>
+    <button className="popup-close">Close</button>
+  </div>
+</div>
+   <main>
+    <section>
+
+    </section>
+
+    <section className="headline-sec">
+    
+    </section>
+    <section>
+      <div className="main-content">
+        <div className="left-main-content">
+          <div className="outfits-type-display-box">
+            <img className="outfit-type-display" src="images/illustration-images/fancy-date-night-gown.jpg" alt="">
+          </div>
+          <div className="outfits-type-display-box">
+            <img className="outfit-type-display" src="images/illustration-images/owambe-native-men.jpg" alt="">
+          </div>
+          <div className="outfits-type-display-box">
+            <img className="outfit-type-display" src="images/illustration-images/office-gown-women.jpg" alt="">
+          </div>
+              <div className="outfits-type-display-box">
+            <img className="outfit-type-display" src="images/illustration-images/in-law-visit-gown.jpg" alt="">
+          </div>
+            <div className="outfits-type-display-box outfits-type-display-box-special-two">
+            <img className="outfit-type-display" src="images/illustration-images/university-className-outfit-women.jpg" alt="">
+          </div>
+          <div className="outfits-type-display-box-special">
+            <img className="outfit-type-display-special" src="images/illustration-images/walk-oufit.jpg" alt="">
+          </div>
+        </div>
+        <div className="right-main-content">
+          <input className="category-input" placeholder="Search category" type="text">
+          <h3 className="category-text">Categories</h3>
+          <div className="first-set">
+            <button className="category-buttons">
+            weddings
+            </button>
+              <button className="category-buttons">
+               office wears
+             </button>
+             <button className="category-buttons">
+              Beach wears
+             </button>
+            <button className="category-buttons">
+             Church
+            </button>
+            <button className="category-buttons">seminars</button>
+            <button className="category-buttons">
+              summer
+            </button>
+            <button className="category-buttons">
+              Concerts
+            </button>
+            <button className="category-buttons">
+              Date nights
+            </button>
+            <button className="category-buttons">
+              Gym oufits
+            </button>
+            <button className="category-buttons">
+              Hiking oufits
+            </button>
+            <button className="category-buttons">
+              Haloween
+            </button>
+          </div>
+      </div>
+      </div>
+    </section>
+    <section>
+      <h1 className="popular-category-text">See popular Categories.</h1>
+        <div className="popular-cnt">
+            <img className="prev-btn" src="images/icons/less-than-symbol.png" alt="">
+          <div className="popular-slider"></div>
+            <img  className="nxt-btn" src="images/icons/greater-than-symbol.png" alt="">
+        </div>
+    </section>
+    <section>
+      <div className="brand-logos">
+       <img className="brand-img" src="images/brands-logo/Black & White Elegant Typography Monogram Logo.png" alt="">
+       <img className="brand-img" src="images/brands-logo/Gray and Black Simple Clothing Store Logo.png" >
+       <img className="brand-img" src="images/brands-logo/Clean Elegant Typography Brand Logo.png" alt="">
+       <img className="brand-img" src="images/brands-logo/Dark Green Modern Initial Logo (1).png" alt="">
+      </div>
+    </section>
+   </main>
+   <footer>
+    <div className="footer-ctn">
+      <div className="social-ctn">
+        <img className="social-icons" src="images/icons/facebook.png" alt="">
+        <img className="social-icons" src="images/icons/twitter.png" alt="">
+        <img className="social-icons" src="images/icons/instagram.png" alt="">
+      </div>
+      <div className="foot-box">
+        <div className="foot-boxes">
+          <h5>HELP AND INFORMATION</h5>
+          <ul>
+            <li>Help</li>
+            <li>Track order</li>
+            <li>Delivery & returns</li>
+            <li>Site map</li>
+          </ul>
+        </div>
+        <div className="foot-boxes">
+          <h5>ABOUT MY-CLOSET</h5>
+           <ul>
+            <li>About us</li>
+            <li>Careers at ASOS</li>
+            <li>Corporate responsibility</li>
+            <li>investors' site</li>
+          </ul>
+        </div>
+        <div className="foot-boxes">
+          <h5>MORE FROM MY-CLOSET</h5>
+           <ul>
+            <li>mobile and My-Closet apps</li>
+            <li>Gift vouchers</li>
+            <li>Black Friday</li>
+            <li>My-Closet x Thrift</li>
+          </ul>
+        </div>
+        <div className="foot-boxes">
+          <h5>PRIVACY AND LEGAL</h5>
+           <ul>
+            <li>Privacy Policy</li>
+            <li>Terms & Condition</li>
+            <li>About Cookies</li>
+            <li>Terms of Use</li>
+            <li>Product</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   </footer>
+
+   <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
