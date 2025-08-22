@@ -1,6 +1,20 @@
-function SideBar() {
+import type { JSX } from 'react';
+import './sidebar.css'
+
+
+type SideBarProps = {
+  isShowing: boolean,
+  cancelButton: () => void;
+}
+
+
+function SideBar({isShowing, cancelButton}: SideBarProps): JSX.Element {
+ 
+
+
     return (
-       <div className="side-bar">
+       <div className="side-bar" style={{transform: isShowing === true ? 'translate(-0%)' : 'translate(-100%)'}}>
+       <img className="cancel-btn" src="images/icons/close-button.png" alt="" onClick={cancelButton}/>
       <ul>
         <li>
          <button className="side-bar-button side-bar-home">

@@ -1,13 +1,27 @@
+import { useState } from 'react';
+import SideBar from './sideBar';
 import './header.css'
 
 function Headers() {
+ const [isShowing, setIsShowing] = useState(false)
+
+
+    function cancelButton() {
+       setIsShowing(false)
+   }
+
+     function MenuButton() {
+     setIsShowing(true)
+  }
+
   return (
     <>
+    <SideBar isShowing={isShowing} cancelButton={cancelButton} />
       <div className="closet-header">
         <div className="header-top">
           <div className="closet-left-section">
             <div className="menu-box">
-              <button className="menu-btn">
+              <button className="menu-btn" onClick={MenuButton}>
                 <img
                   className="menu-img"
                   src="images/icons/hamburger-menu.png"
