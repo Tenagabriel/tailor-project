@@ -35,7 +35,7 @@ function Headers() {
             </span>
           </div>
           <div className="closet-right-section">
-            <a className="trend-link" href="trends.html">
+            <a className="trend-link" href="/trend">
               <button className="see-brand-button js-trend-button">
                 See top brands ➔
               </button>

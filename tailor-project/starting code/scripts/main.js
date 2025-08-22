@@ -97,7 +97,7 @@ const sideBarHome = document.querySelector('.side-bar-home');
 
  const sideBarTrend = document.querySelector('.side-bar-trend');
  sideBarTrend.addEventListener('click', () => {
-  window.location.href = 'trends.html'
+  window.location.href = '/trend'
  })
 
  const sideBarExplore = document.querySelector('.side-bar-explore');
