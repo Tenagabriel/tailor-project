@@ -17,7 +17,7 @@ main {
   display: flex;
   justify-content: space-between;
   scroll-behavior: smooth;
-  overflow: auto;
+  overflow-x: auto;
   scrollbar-width: none;
 }
 
