@@ -1,4 +1,4 @@
- export const outfitIllustrations = [
+const outfitIllustrations = [
   {
     id: "1",
     Type: "Native Attire",
@@ -108,4 +108,6 @@
     ratingCount: 72
   }
 ];
+
+export default outfitIllustrations;
 

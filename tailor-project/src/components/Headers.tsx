@@ -1,9 +1,23 @@
 import { useState } from 'react';
+import {useNavigate} from 'react-router'
 import SideBar from './sideBar';
 import './header.css'
 
+
+
 function Headers() {
  const [isShowing, setIsShowing] = useState(false)
+ const [search, setSearch] = useState('')
+
+ const navigate = useNavigate()
+
+    function searchInput(event: React.ChangeEvent<HTMLInputElement>){
+      setSearch(event.target.value)
+    }
+
+    function searchItem() {
+      navigate(`/trend?search=${search}`)
+    }
 
 
     function cancelButton() {
@@ -39,12 +53,14 @@ function Headers() {
               className="search-bar js-search-bar"
               placeholder="Search your occasion"
               type="text"
+              onChange={searchInput}
             />
             <span>
               <img
                 className="search-icon"
                 src="images/icons/search-icon.png"
                 alt=""
+                onClick={searchItem}
               />
             </span>
           </div>
