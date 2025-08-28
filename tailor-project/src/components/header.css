@@ -48,14 +48,11 @@ body {
   margin: 0;
 }
 
-.headers-ul li {
+.headers-ul p {
   padding: 11px 13px;
 }
 
 
-.headers-ul-li-explore.is-hover {
-   background-color: rgb(70, 68, 68);
-}
 
 
 .closet-left-section {

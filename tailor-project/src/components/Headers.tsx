@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {useNavigate} from 'react-router'
+import HeadersBottom from './headersBottom';
 import SideBar from './sideBar';
 import './header.css'
 
@@ -65,7 +66,7 @@ function Headers() {
             </span>
           </div>
           <div className="closet-right-section">
-            <a className="trend-link" href="/trend">
+            <a className="trend-pnk" href="/trend">
               <button className="see-brand-button js-trend-button">
                 See top brands ➔
               </button>
@@ -94,21 +95,7 @@ function Headers() {
         </div>
       </div>
 
-      <div className="header-bottom">
-        <nav>
-          <ul className="headers-ul">
-            <li className="headers-ul-li-explore">Explore</li>
-            <li className="headers-ul-li">Trending</li>
-            <li className="headers-ul-li">Tailoring</li>
-            <li className="headers-ul-li">Womens</li>
-            <li className="headers-ul-li">Mens</li>
-            <li className="headers-ul-li">Discover</li>
-            <li className="headers-ul-li">Brands</li>
-            <li className="headers-ul-li">About</li>
-            <li className="headers-ul-li">Contact</li>
-          </ul>
-        </nav>
-      </div>
+      <HeadersBottom />
     </>
   );
 }
