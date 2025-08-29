@@ -19,11 +19,9 @@ function ExplorePop({isShowing, exploreDetails, leaveExplore}: exploreTypes) {
       <ul>
         <li>
           <a className="explore-links" href="">
-            <div>
                <div className='nav-imgs-cont'>
                 <img className='nav-imgs' src="images/illustration-images/female-red-gown.jpg" alt="" />
                </div>
-            </div>
             <div className='nav-txt-cnt'>
               <span className='nav-txt'> Gowns</span>
             </div>
@@ -31,11 +29,11 @@ function ExplorePop({isShowing, exploreDetails, leaveExplore}: exploreTypes) {
         </li>
         <li>
            <a className="explore-links" href="">
-            <div>
+            
                <div className='nav-imgs-cont'>
                 <img className='nav-imgs' src="images/illustration-images/in-law-visit-gown.jpg" alt="" />
                </div>
-            </div>
+            
             <div className='nav-txt-cnt'>
               <span className='nav-txt'> Ankara</span>
             </div>
@@ -43,11 +41,11 @@ function ExplorePop({isShowing, exploreDetails, leaveExplore}: exploreTypes) {
         </li>
         <li>
            <a className="explore-links" href="">
-            <div>
+            
                <div className='nav-imgs-cont'>
                 <img className='nav-imgs' src="images/illustration-images/walk-oufit.jpg" alt="" />
                </div>
-            </div>
+            
             <div className='nav-txt-cnt'>
               <span className='nav-txt'> Jeans</span>
             </div>
@@ -55,11 +53,11 @@ function ExplorePop({isShowing, exploreDetails, leaveExplore}: exploreTypes) {
         </li>
         <li>
            <a className="explore-links" href="">
-            <div>
+
                <div className='nav-imgs-cont'>
                 <img className='nav-imgs' src="images/illustration-images/ankara-women-one.jpg" alt="" />
                </div>
-            </div>
+            
             <div className='nav-txt-cnt'>
               <span className='nav-txt'> Palazzo</span>
             </div>
@@ -67,11 +65,11 @@ function ExplorePop({isShowing, exploreDetails, leaveExplore}: exploreTypes) {
         </li>
         <li>
            <a className="explore-links" href="">
-            <div>
+            
                <div className='nav-imgs-cont'>
                 <img className='nav-imgs' src="images/illustration-images/office-gown-women.jpg" alt="" />
                </div>
-            </div>
+            
             <div className='nav-txt-cnt'>
               <span className='nav-txt'> Skirts & Blouses</span>
             </div>
@@ -84,11 +82,11 @@ function ExplorePop({isShowing, exploreDetails, leaveExplore}: exploreTypes) {
       <ul>
         <li>
           <a className="explore-links" href="">
-            <div>
+            
                <div className='nav-imgs-cont'>
                 <img className='nav-imgs' src="images/illustration-images/church-native-attire-men.jpg" alt="" />
                </div>
-            </div>
+            
             <div className='nav-txt-cnt'>
               <span className='nav-txt'>Natives</span>
             </div>
@@ -96,11 +94,11 @@ function ExplorePop({isShowing, exploreDetails, leaveExplore}: exploreTypes) {
         </li>
         <li>
            <a className="explore-links" href="">
-            <div>
+            
                <div className='nav-imgs-cont'>
                 <img className='nav-imgs' src="images/illustration-images/grooms-men.jpg" alt="" />
                </div>
-            </div>
+            
             <div className='nav-txt-cnt'>
               <span className='nav-txt'>Jackets</span>
             </div>
@@ -108,11 +106,11 @@ function ExplorePop({isShowing, exploreDetails, leaveExplore}: exploreTypes) {
         </li>
         <li>
            <a className="explore-links" href="">
-            <div>
+            
                <div className='nav-imgs-cont'>
                 <img className='nav-imgs' src="images/illustration-images/loverboy-dinner-suit-men.jpg" alt="" />
                </div>
-            </div>
+            
             <div className='nav-txt-cnt'>
               <span className='nav-txt'> Suits</span>
             </div>
@@ -122,11 +120,11 @@ function ExplorePop({isShowing, exploreDetails, leaveExplore}: exploreTypes) {
         <h5>New In: Selling Fast</h5>
         <li>
            <a className="explore-links" href="">
-            <div>
+            
                <div className='nav-imgs-cont'>
                 <img className='nav-imgs' src="images/illustration-images/owambe-native-men.jpg" alt="" />
                </div>
-            </div>
+            
             <div className='nav-txt-cnt'>
               <span className='nav-txt'>More</span>
             </div>

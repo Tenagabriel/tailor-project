@@ -38,6 +38,10 @@ body {
   align-items: center;
 }
 
+.header-bottom p {
+  cursor: pointer;
+}
+
 
  .headers-ul {
   display: flex;

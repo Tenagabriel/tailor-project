@@ -28,11 +28,17 @@
 
 
 
-.explore-popup h4, h5 {
+.explore-popup h4{
+  color: black;
+  cursor: pointer;
+}
+
+.explore-popup h5 {
   color: black;
   opacity: 0.5;
   cursor: pointer;
 }
+
 
 
 
@@ -42,7 +48,7 @@
 }
 
 .explore-links {
-  color: black;
+  color: rgb(75, 72, 72);
   text-decoration: none;
   font-size: 13px;
   display: flex;
@@ -84,8 +90,8 @@
 }
 
 .womens-box li:not(:last-child) {
-  border-bottom: 1px solid rgb(235, 229, 229); /* Thin border */
-  margin: 0 10%; /* Shorten border by adding 10% margins on left and right */
+  border-bottom: 1px solid rgb(235, 229, 229); 
+  margin: 0 10%; 
   padding-bottom: 8px;
   padding-top: 8px; 
 }
