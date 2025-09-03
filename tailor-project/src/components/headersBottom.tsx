@@ -1,5 +1,6 @@
 import ExplorePop from "./ExplorePop";
 import ClothingPop from "./ClothingPop";
+import TrendingPop from "./trending";
 import { useState } from "react";
 
 function HeadersBottom() {
@@ -58,7 +59,7 @@ const [isClothing, setIsClothing] = useState(false)
      
      <ExplorePop exploreDetails={exploreDetails} leaveExplore={leaveExplore} isShowing={isShowing}/>
      <ClothingPop clothingDetails={clothingDetails} leaveClothing={leaveClothing} isClothing={isClothing} />
-     
+     <TrendingPop />
    </>
     )
 }
