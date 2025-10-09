@@ -62,17 +62,14 @@
     border-bottom: 1px solid rgb(235, 229, 229);
 }
 
-.dos-bx {
-    background-color: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 
 .trnd-img {
    object-fit: fill;
    width: 100%;
 }
+
 
 .dos-bx ul {
     list-style: none;
@@ -84,8 +81,7 @@
 .trnd-link{
     color: white;
     position: relative;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 .trnd-title {
@@ -96,4 +92,19 @@
 
 .trnd-img-bx {
       width: 220px;
+
+}
+
+
+
+
+.tres-bx ul {
+    list-style: none;
+
+}
+
+
+
+.cuat-bx ul {
+    list-style: none;
 }

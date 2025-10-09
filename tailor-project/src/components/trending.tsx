@@ -80,8 +80,30 @@ function TrendingPop() {
             </li>
          </ul>
       </div>
-      <div className="tres-bx">3</div>
-      <div className="cuat-bx">4</div>
+      <div className="tres-bx">
+          <ul>
+            <li>
+                <a className="trnd-link" href="">
+                    <div className="trnd-img-bx">
+                        <img className="trnd-img" src="images/illustration-images/women-native-five.jpg" alt="" />
+                    </div>
+                    <span className="trnd-title">New Season Look</span>
+                </a>
+            </li>
+         </ul>
+      </div>
+      <div className="cuat-bx">
+          <ul>
+            <li>
+                <a className="trnd-link" href="">
+                    <div className="trnd-img-bx">
+                        <img className="trnd-img" src="images/illustration-images/men-native-six.jpg" alt="" />
+                    </div>
+                    <span className="trnd-title">New Season Look</span>
+                </a>
+            </li>
+         </ul>
+      </div>
     </div>
   );
 }
