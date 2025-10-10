@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {useNavigate} from 'react-router'
+import RegFx from './regFx';
 import HeadersBottom from './headersBottom';
 import SideBar from './sideBar';
 import './header.css'
@@ -9,6 +10,7 @@ import './header.css'
 function Headers() {
  const [isShowing, setIsShowing] = useState(false)
  const [search, setSearch] = useState('')
+ const [isReg, setIsReg] = useState(false)
 
  const navigate = useNavigate()
 
@@ -28,6 +30,14 @@ function Headers() {
      function MenuButton() {
      setIsShowing(true)
   }
+
+     function regDetails() {
+      setIsReg(true)
+     }
+
+     function cancelReg() {
+      setIsReg(false)
+     }
 
   return (
     <>
@@ -76,7 +86,9 @@ function Headers() {
               src="images/icons/search.png"
               alt=""
             />
-            <button className="user-icon-button">
+            <button className="user-icon-button"
+            onClick={regDetails}
+            >
               <img className="user-icon-img" src="images/icons/people.png" />
               <div className="user-arrow">
                 <img
@@ -94,7 +106,7 @@ function Headers() {
           </div>
         </div>
       </div>
-
+      <RegFx isReg={isReg} cancelReg={cancelReg}/>
       <HeadersBottom />
     </>
   );

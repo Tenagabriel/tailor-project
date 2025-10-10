@@ -6,6 +6,7 @@ import { useState } from "react";
 function HeadersBottom() {
 const [isShowing, setIsShowing] = useState(false)
 const [isClothing, setIsClothing] = useState(false)
+const [isTrending, setIsTrending] = useState(false)
 
    function exploreDetails() {
     setTimeout(() => {
@@ -31,6 +32,22 @@ const [isClothing, setIsClothing] = useState(false)
     }, 400)
    }
 
+   function trendingDetails() {
+     setTimeout(() => {
+     setIsTrending(true)
+      console.log('trending triggered')
+    }, 400)
+   }
+
+
+   function leaveTrending() {
+       setTimeout(() => {
+     setIsTrending(false)
+    }, 400)
+   }
+
+
+
 
     return (
    <>
@@ -46,7 +63,11 @@ const [isClothing, setIsClothing] = useState(false)
             onMouseLeave={leaveClothing}
             style={{background: isClothing === true ? 'rgba(240, 240, 240)' : ''}}
             >Clothing</p>
-            <p className="headers-ul-p">Trending</p>
+            <p className="headers-ul-p"
+             onMouseEnter={trendingDetails}
+             onMouseLeave={leaveTrending}
+             style={{background: isTrending === true ? 'rgba(240, 240, 240)' : ''}}
+            >Trending</p>
             <p className="headers-ul-p">Womens</p>
             <p className="headers-ul-p">Mens</p>
             <p className="headers-ul-p">Discover</p>
@@ -59,7 +80,7 @@ const [isClothing, setIsClothing] = useState(false)
      
      <ExplorePop exploreDetails={exploreDetails} leaveExplore={leaveExplore} isShowing={isShowing}/>
      <ClothingPop clothingDetails={clothingDetails} leaveClothing={leaveClothing} isClothing={isClothing} />
-     <TrendingPop />
+     <TrendingPop trendingDetails={trendingDetails} leaveTrending={leaveTrending} isTrending={isTrending}/>
    </>
     )
 }

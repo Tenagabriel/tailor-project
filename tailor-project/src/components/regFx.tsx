@@ -1,8 +1,20 @@
-function RegFx() {
+import "./reg.css"
+
+type regTypes = {
+  isReg: boolean
+  cancelReg: () => void
+}
+
+
+function RegFx({isReg, cancelReg}: regTypes) {
     return (
-     <div className="reg-fx">
+     <div className="reg-fx"
+      style={{opacity: isReg === false ? 0 : 1 }}
+     >
        <div className="signup-reg-popup">
-        <img className="cancel-btn" src="images/icons/close-button.png" alt="" />
+          <button className="cancel-btn" onClick={cancelReg}>
+            <img className="cancel-img" src="images/icons/close-button.png" />
+          </button>
         <h1>Create an account</h1>
         <div className="reg-main-bx">
           <input className="reg-bx" placeholder="First Name" type="text" />

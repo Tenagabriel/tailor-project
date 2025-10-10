@@ -1,8 +1,19 @@
 import "./trending.css";
 
-function TrendingPop() {
+ type trendingTypes = {
+  isTrending: boolean
+  trendingDetails: () => void;
+  leaveTrending: () => void;
+ }
+
+
+function TrendingPop({trendingDetails, leaveTrending, isTrending}: trendingTypes) {
   return (
-    <div className="trending-popup">
+    <div className="trending-popup"
+    onMouseEnter={trendingDetails}
+    onMouseLeave={leaveTrending}
+    style={{opacity: isTrending === false ? 0 : 1,  pointerEvents: isTrending === false ? 'none' : 'auto'}}
+    >
       <div className="uno-bx">
         <h4>Top-Search</h4>
         <ul>
@@ -87,7 +98,7 @@ function TrendingPop() {
                     <div className="trnd-img-bx">
                         <img className="trnd-img" src="images/illustration-images/women-native-five.jpg" alt="" />
                     </div>
-                    <span className="trnd-title">New Season Look</span>
+                    <span className="trnd-title">African Fits</span>
                 </a>
             </li>
          </ul>
@@ -99,7 +110,7 @@ function TrendingPop() {
                     <div className="trnd-img-bx">
                         <img className="trnd-img" src="images/illustration-images/men-native-six.jpg" alt="" />
                     </div>
-                    <span className="trnd-title">New Season Look</span>
+                    <span className="trnd-title">Stylish Look</span>
                 </a>
             </li>
          </ul>
