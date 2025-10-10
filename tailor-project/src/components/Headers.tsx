@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {useNavigate} from 'react-router'
 import RegFx from './regFx';
+import SignPop from './signup.tsx';
 import HeadersBottom from './headersBottom';
 import SideBar from './sideBar';
 import './header.css'
@@ -11,6 +12,7 @@ function Headers() {
  const [isShowing, setIsShowing] = useState(false)
  const [search, setSearch] = useState('')
  const [isReg, setIsReg] = useState(false)
+ const [isSign, setIsSign] = useState(false)
 
  const navigate = useNavigate()
 
@@ -34,9 +36,14 @@ function Headers() {
      function regDetails() {
       setIsReg(true)
      }
-
+  
      function cancelReg() {
       setIsReg(false)
+      setIsSign(false)
+     }
+
+     function signDetails() {
+      setIsSign(true)
      }
 
   return (
@@ -106,7 +113,8 @@ function Headers() {
           </div>
         </div>
       </div>
-      <RegFx isReg={isReg} cancelReg={cancelReg}/>
+      <RegFx isReg={isReg} cancelReg={cancelReg} signDetails={signDetails}/>
+      <SignPop cancelReg={cancelReg}/>
       <HeadersBottom />
     </>
   );

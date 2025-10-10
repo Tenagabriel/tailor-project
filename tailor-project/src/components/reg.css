@@ -87,6 +87,23 @@ text-align: center;
   position: relative;
 }
 
+.opt-main-bx {
+  position: relative;
+}
+
+.opt-sign-in {
+  position: absolute;
+  left: 50%;
+}
+
+.phone-sign-in-bx {
+  margin-top: 45px;
+  width: 94%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid grey
+}
+
 .cancel-img {
   width: 20px;
 }
@@ -118,9 +135,18 @@ text-align: center;
   width: 350px;
 }
 
+
+
 .reg-bx {
   margin-bottom: 4px;
   padding: 8px;
+}
+
+.sign-in-bx {
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid grey;
 }
 
 .reg-nxt {

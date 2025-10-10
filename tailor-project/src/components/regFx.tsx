@@ -2,11 +2,12 @@ import "./reg.css"
 
 type regTypes = {
   isReg: boolean
-  cancelReg: () => void
+  cancelReg: () => void;
+  signDetails: () => void
 }
 
 
-function RegFx({isReg, cancelReg}: regTypes) {
+function RegFx({isReg, cancelReg, signDetails}: regTypes) {
     return (
      <div className="reg-fx"
       style={{opacity: isReg === false ? 0 : 1 }}
@@ -26,7 +27,11 @@ function RegFx({isReg, cancelReg}: regTypes) {
           <input className="reg-box reg-nxt" placeholder="NEXT" type="text" />
         </div>
           <div className="reg-action">
-            <p>Already have an account?<span><a href="">sign in</a></span></p>
+            <p>Already have an account?<span>
+              <button className="sign-in-btn" 
+              onClick={}
+              >sign in</button>
+            </span></p>
           </div>
        </div>
      </div>
