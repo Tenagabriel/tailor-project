@@ -8,9 +8,9 @@ type regTypes = {
 
 
 function RegFx({isReg, cancelReg, signDetails}: regTypes) {
+  if (!isReg) return null
     return (
-     <div className="reg-fx"
-      style={{opacity: isReg === false ? 0 : 1 }}
+     <div className="reg-fx"   
      >
        <div className="signup-reg-popup">
           <button className="cancel-btn" onClick={cancelReg}>
@@ -29,7 +29,7 @@ function RegFx({isReg, cancelReg, signDetails}: regTypes) {
           <div className="reg-action">
             <p>Already have an account?<span>
               <button className="sign-in-btn" 
-              onClick={}
+               onClick={signDetails}
               >sign in</button>
             </span></p>
           </div>

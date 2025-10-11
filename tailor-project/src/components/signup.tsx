@@ -1,14 +1,17 @@
+ type signType = {
+    isSign: boolean;
+    cancelSign: () => void;
+    regDetails: () => void
+ } 
 
-type signType = {
-    cancelReg: () => void
-}
-
-function SignupPop({cancelReg}: signType) {
+function SignupPop({isSign, cancelSign, regDetails}: signType) {
+    if (!isSign) return null;
     return (
      <>
-    <div className="reg-fx">
+    <div className="reg-fx" 
+      >
        <div className="signup-reg-popup">
-          <button className="cancel-btn" onClick={cancelReg}>
+          <button className="cancel-btn" onClick={cancelSign}>
             <img className="cancel-img" src="images/icons/close-button.png" />
           </button>
         <h1>Welcome back</h1>
@@ -25,7 +28,7 @@ function SignupPop({cancelReg}: signType) {
 
           <div className="reg-action">
             <p>Already have an account?</p>
-            <a href="">sign up</a>
+             <button onClick={regDetails}>sign up</button>
             <p>Forgotten password?</p>
           </div>
        </div>
