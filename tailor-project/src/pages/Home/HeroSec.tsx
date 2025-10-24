@@ -8,7 +8,7 @@ function HeroSec() {
             tailors in your area.
           </p>
           <div className="hero-buttons">
-            <a href="#browse" className="btn primary-btn">
+            <a href="/browse" className="btn primary-btn">
               Browse Tailors
             </a>
             <a href="#upload" className="btn secondary-btn">

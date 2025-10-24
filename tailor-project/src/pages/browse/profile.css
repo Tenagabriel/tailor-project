@@ -1,0 +1,65 @@
+
+.btailor-main-bx {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+
+.brand-imgs {
+  width: 280px;
+}
+
+.brand-main-bx {
+  position: relative;
+}
+
+
+.dots-bx {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  background-color: rgb(158, 151, 151);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.dots-img {
+  width: 35px;
+}
+
+.tooltip {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(5px);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+
+.dots-bx:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.search-brand-bx {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.search-brand {
+  width: 80%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid grey
+}
