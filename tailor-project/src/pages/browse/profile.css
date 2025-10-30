@@ -57,9 +57,89 @@
   padding-top: 10px;
 }
 
-.search-brand {
+.search-brand-semi-bx {
   width: 80%;
+  position: relative;
+}
+
+.search-brand-icon {
+  width: 20px;
+  position: absolute;
+  right: 15px;
+  bottom: 6px;
+}
+
+.search-brand {
+  width: 100%;
   padding: 8px;
   border-radius: 10px;
   border: 1px solid grey
 }
+
+.search-brand::placeholder {
+  position: relative;
+  left: 30px;
+}
+
+.more-action-popup {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 75px;
+  right: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 250px;
+  padding: 10px 25px;
+}
+
+.more-action-link {
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: flex;
+  color: black;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+
+.more-action-link-d {
+  text-decoration: none;
+  display: flex;
+  color: black;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.more-action-popup a:hover {
+  background-color: #ccc;
+}
+
+.rating-bx {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.star-filled {
+  color: gold;
+  cursor: pointer;
+}
+
+.star-empty {
+  color: grey;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+
+.more-action-icons {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
