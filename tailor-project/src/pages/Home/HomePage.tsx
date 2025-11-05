@@ -8,18 +8,15 @@ import Footer from "../../components/footer";
 
 function HomePage() {
   return (
-    <>
-      <Headers />
-      <main>
+    <div className="home-bx">
+       <Headers />
         <HeroSec />
         <Headline />
         <Content />
         <Popular />
         <Logos />
         <Footer />
-      </main>
-    
-    </>
+    </div>
   );
 }
 

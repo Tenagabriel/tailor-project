@@ -1,310 +1,57 @@
-html {
-  font-size: 16px; 
+.revamp-brand-logo {
+  width: 120px;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  /*background-color: rgba(162, 162, 168, 0.384);*/
-  background-color: white;
-  padding-bottom:  3.75rem;
-  margin: 0;
-}
-
-
-.closet-header {
- background-color: rgba(10, 10, 10, 0.705);
-}
-
-.header-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(24, 24, 26, 0.384);
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-  margin-bottom: 0;
-}
-
-.header-bottom {
-  height: 40px;
-  display: flex;
-  align-items: center;
-}
-
-.header-bottom p {
-  cursor: pointer;
-}
-
-
- .headers-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style: none;
-  max-width: 75rem; 
-  margin: 0;
-}
-
-.headers-ul p {
-  padding: 11px 13px;
-}
-
-
-
-
-.closet-left-section {
-  margin-left: 0.3125rem; 
-  line-height: 0;
-}
-
-.user-icon-button {
-  display: flex;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  background-color: white;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border-radius: 4px;
-}
-
-.user-icon-img {
-  width: 20px;
-}
-
-
-
-.menu-btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  display: none;
-}
-
-
-.menu-img {
-  width: 2.1875rem;
-}
-
-.down-arrow-img {
-  width: 10px;
-}
-
-.up-arrow-img {
-  width: 10px;
-  display: none;
-}
-
-.down-arrow-img.is-show {
-  display: none;
-}
-
-.up-arrow-img.is-showed {
-  display: initial;
-}
-
-
-
-.closet-right-section {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 15.625rem; 
-  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 70%;
+  background-color: black;
+  border-radius: 60px;
+  padding: 7px 20px;
+  position: fixed;
+  top: 20px;
+  left: 215px;
+  z-index: 1000;
 }
 
-.see-brand-button {
-  padding: 0.5rem; 
-  border-radius: 1.875rem;
-  border: 0.0625rem solid rgb(129, 89, 89); 
+.header-middle-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
 }
 
-.see-brand-button:hover {
+.header-middle-section a {
+  margin-left: 20px;
+  text-decoration: none;
   color: white;
-  background-color: rgb(129, 89, 89);
-  cursor: pointer; 
-  transition: all 0.6s ease-out;
+  opacity: 0.8;
 }
 
-.right-search-icon {
-  position: absolute;
-  right: 6.25rem;
-  display: none;
+.header-right-section {
+  color: white;
 }
 
-.search-bar {
-  flex: 1; 
-  padding: 10px 10px 10px 10px;
-  width: 100%;
-  border-radius: 40px;
-  border: none;
+.reg-bx {
+  background-color: rgb(220, 54, 46);
+  border-radius: 18px;
+  font-size: 14px;
+  font-style: normal;
+  font-variation-settings: normal;
+  font-weight: 700;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-
-.search-icon {
-  position: absolute;
-  right: 2%;
-  top: 35%;
-  height: 1.1875rem;
-}
-
-
-.closet-middle-section {
-  position: relative;
-  max-width: 25rem; 
-  margin-right: 0.3125rem;
-}
-
-.closet-motto {
-  font-size: 0.9375rem; 
-  font-style: oblique;
-  color: rgb(235, 224, 224);
-}
-
-.brand-name {
-  font-size: 2.0rem; 
-  color:  rgb(235, 224, 224);
-  margin: 1.25rem 0; 
-  padding-right: 0.3125rem;
-}
-
-
-@media (max-width: 56.25rem) {
-  .closet-motto {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 50rem) {
-  .closet-motto {
-    font-size: 0.563rem;
-  }
-
-};
-
-@media (max-width: 46.89rem) {
-  .closet-motto {
-    font-size: 0.44rem;
-  }
-}
-
-
-@media (max-width: 45.625rem) {
-
-  .header-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(24, 24, 26, 0.384);
-    padding: 0 0.625rem;
-    margin-bottom: 0;
-    height: 8vh;
-  }
-  .brand-name {
-    font-size: 1.4rem;
-    margin-left: 40px;
-  }
-
-  .header-bottom {
-    display: none;
-  }
-
-  .closet-left-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    line-height: normal;
-    padding: 0;
-    margin: 0 0 0 0.3125rem;
-  }
-  
-  .menu-btn {
-    display: inline-flex;
-    margin-right: 10px;
-    padding: 0;
-    line-height: 1;
-  }
-
-  .brand-name {
-    font-size: 1.4rem;
-    margin-left: 0;
-    line-height: 1.5;
-    white-space: nowrap;
-    margin: 0;
-    margin-left: 20px;
-  }
-
-  .closet-motto {
-    font-size: 0.0rem;
-    display: none;
-  }
-
-
-  .closet-middle-section {
-    display: none;
-  }
-  
-  .see-brand-button {
-    display: none;
-  }
-
-  .right-search-icon {
-    display: initial;
-    width: 30px;
-  }
-
-  .menu-img {
-    width: 18px;
-    vertical-align: middle;
-  }
-
-  
-}
-
-@media (max-width: 37.5rem) {
-  .brand-name {
-    font-size: 1.7rem;
-  }
-}
-
-@media (max-width: 31.25rem) { 
-  html {
-    font-size: 14px;
-  }
-  
-  .menu-img {
-  width: 1.8rem;
- }
-
-  .menu-btn {
-    width: 1.8rem;
-    display: block;
-  }
-
-  .closet-right-section {
-    width: 100%;
-  }
-
-  .right-search-icon {
-    width: 25px;
-  }
-
-  .brand-name {
-    font-size: 1.7rem;
-    line-height: 1.5;
-    white-space: nowrap;
-  }
-
+.reg-bx:hover {
+  background-color: rgb(206, 49, 43);
 }
