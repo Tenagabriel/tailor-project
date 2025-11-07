@@ -5,8 +5,7 @@
     gap: 22px;
 }
 .works-bx {
-    border: 1px solid grey;
-    padding: 35px;
+    padding: 38px;
     background-color: oklch(0.21 0.034 264.665);
     max-width: 300px;
     height: 280px;
@@ -17,8 +16,7 @@
 }
 
 .works-bx-styled {
-    border: 1px solid grey;
-    padding: 35px;
+    padding: 38px;
     background-color: grey;
     max-width: 300px;
     height: 280px;
