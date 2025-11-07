@@ -161,6 +161,7 @@ body {
   align-items: center;
   padding: 1.5625rem;
   gap: 0.6250rem;
+  margin-bottom: 0;
 }
 
 .headline-headers {

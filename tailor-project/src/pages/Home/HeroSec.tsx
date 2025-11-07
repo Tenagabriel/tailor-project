@@ -14,7 +14,7 @@ function HeroSec() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => {
-        return prev + 1 % slides.length}
+        return (prev + 1) % slides.length}
       );
     }, 6000);
     return () => clearInterval(interval);

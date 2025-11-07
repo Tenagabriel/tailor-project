@@ -1,0 +1,75 @@
+.works-bx-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+}
+.works-bx {
+    border: 1px solid grey;
+    padding: 35px;
+    background-color: oklch(0.21 0.034 264.665);
+    max-width: 300px;
+    height: 280px;
+    max-height: 290px;
+    width: 210px;
+    max-width: 220px;
+    border-radius: 12px;
+}
+
+.works-bx-styled {
+    border: 1px solid grey;
+    padding: 35px;
+    background-color: grey;
+    max-width: 300px;
+    height: 280px;
+    max-height: 290px;
+    width: 210px;
+    max-width: 220px;
+    border-radius: 12px;
+}
+
+.works-bx-styled p  {
+    font-weight: 300;
+    color: black;
+    opacity: 0.9;
+}
+
+
+.works-bx p  {
+    font-weight: 300;
+    color: white;
+    opacity: 0.9;
+}
+
+.works-bx h2 {
+    color: white;
+}
+
+.work-steps-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.customer-icon, .connect-icon, .dress-icon {
+    width: 50px;
+    object-fit: contain;
+}
+
+.max-bx {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.sec-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: oklch(0.21 0.034 264.665);
+}

@@ -1,7 +1,7 @@
 import Headers from "../../components/Headers";
 import Headline from "./Headline";
 import HeroSec from "./HeroSec";
-import Content from "./Content";
+import Works from "./works";
 import Popular from "./popular";
 import Logos from "./logos";
 import Footer from "../../components/footer";
@@ -12,7 +12,7 @@ function HomePage() {
        <Headers />
         <HeroSec />
         <Headline />
-        <Content />
+        <Works />
         <Popular />
         <Logos />
         <Footer />
