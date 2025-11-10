@@ -3,6 +3,7 @@ import Headline from "./Headline";
 import HeroSec from "./HeroSec";
 import Works from "./works";
 import Featured from "./featured";
+import Choose from "./choose";
 import Popular from "./popular";
 import Logos from "./logos";
 import Footer from "../../components/footer";
@@ -15,6 +16,7 @@ function HomePage() {
         <Headline />
         <Works />
         <Featured />
+        <Choose />
         <Popular />
         <Logos />
         <Footer />

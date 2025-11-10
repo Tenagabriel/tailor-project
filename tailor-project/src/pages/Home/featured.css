@@ -6,6 +6,11 @@
     gap: 30px;
 }
 
+.feat-max-bx {
+    border-bottom: 1px solid rgb(220, 54, 46);
+    padding-bottom: 70px;
+}
+
 .feat-bx {
     border: 1px solid rgba(211, 211, 211, 0.822);
     display: flex;
@@ -85,3 +90,37 @@
     margin-bottom: 30px;
     color: oklch(0.21 0.034 264.665);
 }
+
+
+.more-tailor-bx {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.more-tailor-inner-bx {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background-color: rgb(220, 54, 46);
+}
+
+.more-tailor-inner-bx:hover {
+    background-color:  rgb(235, 72, 63);
+}
+
+.more-tailor-inner-bx p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
