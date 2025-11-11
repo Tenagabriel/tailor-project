@@ -9,6 +9,7 @@
 .feat-max-bx {
     border-bottom: 1px solid rgb(220, 54, 46);
     padding-bottom: 70px;
+     background-color: rgb(247, 243, 243)
 }
 
 .feat-bx {
@@ -19,7 +20,7 @@
     justify-content: center;
     padding: 10px;
     border-radius: 12px;
-    background-color: rgb(247, 243, 243);
+    background-color: white;
     padding: 20px;
 }
 

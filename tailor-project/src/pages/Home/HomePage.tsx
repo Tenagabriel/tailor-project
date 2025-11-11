@@ -1,23 +1,25 @@
 import Headers from "../../components/Headers";
-import Headline from "./Headline";
-import HeroSec from "./HeroSec";
-import Works from "./works";
-import Featured from "./featured";
-import Choose from "./choose";
-import Popular from "./popular";
-import Logos from "./logos";
+import Support from "../../components/support";
+import Headline from "../../components/Headline";
+import HeroSec from "../../components/HeroSec";
+import Works from "../../components/works";
+import Featured from "../../components/featured";
+import Choose from "../../components/choose";
+import Reviews from "../../components/reviews";
+import Logos from "../../components/logos";
 import Footer from "../../components/footer";
 
 function HomePage() {
   return (
     <div className="home-bx">
        <Headers />
+       <Support />
         <HeroSec />
         <Headline />
         <Works />
         <Featured />
         <Choose />
-        <Popular />
+        <Reviews />
         <Logos />
         <Footer />
     </div>
