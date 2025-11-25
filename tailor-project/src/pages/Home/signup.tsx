@@ -4,8 +4,9 @@
     regDetails: () => void
  } 
 
-function SignupPop({isSign, cancelSign, regDetails}: signType) {
-    if (!isSign) return null;
+function SignInPop({isSign, cancelSign, regDetails}: signType) {
+  if (!isSign) return null
+  
     return (
      <>
     <div className="reg-fx" 
@@ -37,4 +38,4 @@ function SignupPop({isSign, cancelSign, regDetails}: signType) {
     )
 }
 
-export default SignupPop
+export default SignInPop

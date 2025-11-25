@@ -36,22 +36,19 @@
   color: white;
 }
 
-.reg-bx {
+
+.reg-hd-btn {
   background-color: rgb(220, 54, 46);
-  border-radius: 18px;
-  font-size: 14px;
-  font-style: normal;
-  font-variation-settings: normal;
-  font-weight: 700;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1px 45px;
+  color: white;
+  border-radius: 20px;
+  border: none;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
   transition: all 0.3s ease;
+  padding: 7px 35px;
 }
 
-.reg-bx:hover {
+.reg-hd-btn:hover {
   background-color: rgb(206, 49, 43);
 }

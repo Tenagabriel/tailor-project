@@ -1,5 +1,6 @@
+/*
 import { useRef } from "react";
-import illustrationDetails from "../utils";
+import illustrationDetails from "../../../utils";
 
 function Popular() {
   const sliderRef = useRef<HTMLDivElement>(null)
@@ -51,3 +52,4 @@ function nextButton() {
 }
 
 export default Popular;
+*/

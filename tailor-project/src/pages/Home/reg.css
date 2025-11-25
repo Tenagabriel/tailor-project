@@ -136,13 +136,14 @@ text-align: center;
   flex-direction: column;
   justify-content: center;
   width: 350px;
+  gap: 10px;
 }
 
-
-
-.reg-bx {
+.reg-bxs {
   margin-bottom: 4px;
   padding: 8px;
+  border-radius: 5px;
+  border: 1px solid grey;
 }
 
 .sign-in-bx {
@@ -157,6 +158,9 @@ text-align: center;
   padding: 8px;
   background-color: rgb(226, 217, 217);
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .reg-nxt:hover {

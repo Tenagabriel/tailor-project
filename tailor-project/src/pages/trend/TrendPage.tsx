@@ -1,5 +1,5 @@
+
 import { useSearchParams } from "react-router";
-import Headers from "../../components/Headers";
 import outfitIllustrations from "../../utils/illustration-images";
 import "./trend.css";
 
@@ -15,7 +15,6 @@ function TrendPage() {
 
   return (
     <> 
-      <Headers />
 
       <div className="illustration-grid">
         <div className="illustration-container">
@@ -39,3 +38,4 @@ function TrendPage() {
 }
 
 export default TrendPage;
+

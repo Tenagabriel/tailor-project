@@ -1,20 +1,36 @@
 import Headers from "../../components/Headers";
-import Support from "../../components/support";
-import Headline from "../../components/Headline";
-import HeroSec from "../../components/HeroSec";
-import Works from "../../components/works";
-import Featured from "../../components/featured";
-import Choose from "../../components/choose";
-import Reviews from "../../components/reviews";
-import Logos from "../../components/logos";
+import RegFx from "./regFx";
+import SignInPop from "./signup";
+import Support from "./support";
+import Headline from "./Headline";
+import HeroSec from "./HeroSec";
+import Works from "./works";
+import Featured from "./featured";
+import Choose from "./choose";
+import Reviews from "./reviews";
+import Logos from "./logos";
 import Footer from "../../components/footer";
 
-function HomePage() {
+
+type toggleFunc = {
+  isSign: boolean;
+  isReg: boolean;
+  setIsReg: (isReg: boolean) => void;
+  regClick: () => void;
+  cancelSign: () => void;
+  regDetails: () => void;
+  signDetails: () => void
+}
+
+function HomePage({isSign, isReg, setIsReg, regClick, cancelSign, regDetails, signDetails}: toggleFunc) {
+
   return (
     <div className="home-bx">
-       <Headers />
+       <Headers regClick={regClick} />
        <Support />
         <HeroSec />
+        <RegFx isReg={isReg} cancelReg={() => setIsReg(false)} signDetails={signDetails} />
+        <SignInPop isSign={isSign} regDetails={regDetails} cancelSign={cancelSign} /> 
         <Headline />
         <Works />
         <Featured />

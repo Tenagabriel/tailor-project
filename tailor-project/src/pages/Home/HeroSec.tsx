@@ -55,8 +55,8 @@ function HeroSec() {
             My-Tailor bridges creativity and opportunity, empowering tailors to grow their craft while helping customers experience 
             fashion made to fit their unique style and vision.</h3>
           <div>
-            <button className="hero-btn1">Browse Tailors</button>
-            <button className="hero-btn2">Upload your work</button>
+            <a className="hero-btn1" href="/browse">Browse Tailors</a>
+            <a className="hero-btn2" href="/">Upload your work</a>
           </div>
         </div>
       </div>

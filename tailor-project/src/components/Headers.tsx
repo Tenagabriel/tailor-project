@@ -1,6 +1,12 @@
 import "./header.css"
 
-function headers () {
+type RegProps = {
+  regClick: () => void;
+}
+
+function headers ({regClick}: RegProps) {
+
+
   return (
     <>
      <div className="header-container">
@@ -21,13 +27,13 @@ function headers () {
         </a>
       </div>
         <div className="header-right-section">
-          <div className="reg-bx">
-            <p>Login/Signup</p>
-          </div>
+          <button className="reg-hd-btn" onClick={regClick}>
+            Login/Signup
+          </button>
         </div>
      </div>
     </>
   )
 }
 
-export default headers
+export default headers;
