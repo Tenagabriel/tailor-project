@@ -5,6 +5,7 @@ import RegFx from "../Home/regFx";
 import SignInPop from "../Home/signup";
 import Customized from "./custom";
 import TailorProfile from "./Profile";
+import Footer from "../../components/footer";
 
 type toggleFunc = {
   isSign: boolean;
@@ -27,6 +28,7 @@ function BrowseTailorsPage({isSign, isReg, setIsReg, regClick, cancelSign, regDe
          <SignInPop isSign={isSign} regDetails={regDetails} cancelSign={cancelSign} /> 
          <Customized />
          <TailorProfile/>
+         <Footer />
         </>
     )
 }
